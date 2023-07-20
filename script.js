@@ -18,6 +18,16 @@ BOTON.addEventListener("click", intentar);
 function intentar(){
     
     const INTENTO = leerIntento();
+
+    if (INTENTO == ""){
+        console.log("vacio")
+        return
+        
+    } else if (INTENTO.length !== 5){
+        alert("La palabra debe contener 5 letras")
+        return 
+
+    } else{
     if (INTENTO == palabra){
         terminar ("<h1>¡Felicidades, ganaste!</h1>")
         //return //
@@ -46,7 +56,7 @@ function intentar(){
     intentos--
     if (intentos==0){
         terminar ("<h1>:( Intentalo de Nuevo</h1>")
-    }
+    }}
 }
 
 function leerIntento(){
