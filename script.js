@@ -22,7 +22,7 @@ function intentar(){
     if (INTENTO == ""){
         console.log("vacio")
         return
-        
+
     } else if (INTENTO.length !== 5){
         alert("La palabra debe contener 5 letras")
         return 
@@ -72,6 +72,5 @@ function terminar(mensaje){
     BOTON.disabled = true
 
 }
-
 
 
